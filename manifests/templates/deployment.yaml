@@ -1,0 +1,24 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cccc
+  labels:
+    app: cccc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cccc
+  template:
+    metadata:
+      labels:
+        app: cccc
+    spec:
+      containers:
+        - name: cccc
+          image: docker.io/phengbunath/cccc:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080

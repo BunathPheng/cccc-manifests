@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: cccc
-          image: docker.io/phengbunath/cccc:1
+          image: docker.io/phengbunath/cccc:3
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
